@@ -1,0 +1,14 @@
+package in.ineuron.restcontroller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HiRestController {
+	
+	public String displayMsg(String name) {
+		
+		String heyMsg="Hey ";
+		return heyMsg+name+" how are u ?";
+	}
+
+}

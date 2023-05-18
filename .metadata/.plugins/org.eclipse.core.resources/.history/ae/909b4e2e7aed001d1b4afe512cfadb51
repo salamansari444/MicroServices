@@ -1,0 +1,4 @@
+#Server port to host our application and same port will be used for H2-Database also
+server.port=1111
+
+spring.application.name=STOCK-CALCULATION

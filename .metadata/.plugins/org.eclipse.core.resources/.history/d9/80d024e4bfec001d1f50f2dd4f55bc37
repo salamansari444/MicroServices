@@ -1,0 +1,19 @@
+package in.ineuron.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import in.ineuron.entity.StockPrice;
+import in.ineuron.repo.IStockPriceRepo;
+
+public class StockServiceImpl implements IStockService {
+	
+	@Autowired
+	private IStockPriceRepo repo;
+
+	@Override
+	public StockPrice fetchByCompanyName(String company) {
+		return repo.findByCompanyName(company);
+		
+	}
+
+}

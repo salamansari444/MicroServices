@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Get Stock Price</title>
+</head>
+<body>
+
+	<form method="get" action="">
+		<table>
+			<tr>
+				<td>Company Name</td>
+				<td><input type="text" name ="companyName"></td>
+			</tr>
+		
+		</table>
+	</form>
+
+</body>
+</html>

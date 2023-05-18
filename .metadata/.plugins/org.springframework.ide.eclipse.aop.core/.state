@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="10-SbAdminClient-01"/>
+<aop-project name="13-Ribbon-Currency-Conversion"/>
+<aop-project name="11-SbCircuitBreaker"/>
+<aop-project name="06-Stock-UI-App"/>
+<aop-project name="07-Stock-API-Gateway"/>
+<aop-project name="Ribbon-currency-exchange-api"/>
+<aop-project name="Ribbon-currency-conversion"/>
+<aop-project name="02-Eureka-Client-HiServices"/>
+<aop-project name="08-Stock-Actuator-App"/>
+<aop-project name="01-Service-Registery-Eureka-Server"/>
+<aop-project name="12-SbDemoRestApp"/>
+<aop-project name="05-Stock-Calculation"/>
+<aop-project name="03-Eureka-Client-HelloServices"/>
+<aop-project name="04-Stocke-Service"/>
+<aop-project name="09-SbAdminServer"/>
+</aop-reference-model>

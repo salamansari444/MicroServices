@@ -1,0 +1,26 @@
+package in.ineuron.controller;
+
+import javax.servlet.http.HttpServlet;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import reactor.netty.http.server.HttpServer;
+
+@Controller
+public class StockUiController {
+	
+	public String loadPage() {
+		System.out.println(" Stock Ui Load Page");
+		
+		return "index";
+	}
+	
+	@GetMapping("/getTotalCost")
+	public String getTotalCost(HttpServlet request, Model model) {
+		
+		return "";
+	}
+
+}

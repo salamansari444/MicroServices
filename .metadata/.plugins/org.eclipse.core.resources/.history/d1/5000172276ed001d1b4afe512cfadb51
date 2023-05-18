@@ -1,0 +1,7 @@
+package in.ineuron.client;
+
+
+@
+public interface StockClient {
+
+}

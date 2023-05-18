@@ -1,0 +1,12 @@
+package in.ineuron.feignClient;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+
+public interface HelloClient {
+	
+	@GetMapping("/hello/{name}")
+	public String displayMsg(@PathVariable String name);
+
+}

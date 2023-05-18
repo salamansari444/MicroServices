@@ -1,0 +1,14 @@
+package in.ineuron.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class StockUiController {
+	
+	public String loadPage() {
+		System.out.println(" Stock Ui Load Page");
+		
+		return "index";
+	}
+
+}

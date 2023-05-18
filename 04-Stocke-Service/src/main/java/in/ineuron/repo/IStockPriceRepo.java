@@ -1,0 +1,10 @@
+package in.ineuron.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import in.ineuron.entity.StockPrice;
+
+public interface IStockPriceRepo extends JpaRepository<StockPrice, Integer> {
+	public StockPrice findByCompanyName(String company);
+	
+}

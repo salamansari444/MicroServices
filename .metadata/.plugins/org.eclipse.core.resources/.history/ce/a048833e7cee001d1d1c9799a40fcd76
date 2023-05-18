@@ -1,0 +1,23 @@
+package in.ineuron.restcontroller;
+
+import java.util.Random;
+
+import javax.management.RuntimeErrorException;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/fallback")
+public class FallBackCircuitController {
+	
+	public String showMsg() {
+		System.out.println("FallBackCircuitController.showMsg()");
+		
+		if(new Random().nextInt(10)<=10) {
+			throw new RuntimeException("DUMMY EXCEPTION");
+		}
+		return "Hello From Provider";
+	}
+
+}

@@ -1,0 +1,25 @@
+package in.ineuron.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import in.ineuron.entity.StockPrice;
+import in.ineuron.exception.StockNotFoundException;
+import in.ineuron.repo.IStockPriceRepo;
+
+public class StockServiceImpl implements IStockService {
+	
+	@Autowired
+	private IStockPriceRepo repo;
+
+	@Override
+	public Double fetchByCompanyName(String companyName) {
+		
+		StockPrice stockPrice = repo.findByCompanyName(companyName);
+		if(companyName==null) {
+			throw new StockNotFoundException("Company not available");
+		}
+		return stockPrice.getCompanyPrice();
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package in.ineuron.service;
+
+import javax.websocket.server.ServerEndpoint;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class StockServiceClient {
+	
+	
+
+}

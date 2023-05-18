@@ -1,0 +1,13 @@
+package in.ineuron.service;
+
+import in.ineuron.entity.StockPrice;
+
+public class StockServiceImpl implements IStockService {
+
+	@Override
+	public StockPrice fetchByCompanyName(String company) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,25 @@
+package in.ineuron.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+
+@Service
+public class StockServiceClient {
+	
+	public String getTotalPrice(String companyName, Integer quantity) {
+		
+		String response=null
+		WebClient webClient = WebClient.create();
+		
+		
+		try {
+			
+		}catch(Exception e) {
+			response="company not available";
+		}
+		
+		return "";
+	}
+	
+
+}

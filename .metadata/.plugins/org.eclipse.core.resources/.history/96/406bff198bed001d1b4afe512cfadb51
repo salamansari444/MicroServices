@@ -1,0 +1,15 @@
+package in.ineuron.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class StockServiceClient {
+	
+	public String getTotalPrice(String companyName, Integer quantity) {
+		
+		
+		return "";
+	}
+	
+
+}

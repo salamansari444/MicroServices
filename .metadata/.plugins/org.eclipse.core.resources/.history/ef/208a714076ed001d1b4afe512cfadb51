@@ -1,0 +1,31 @@
+package in.ineuron.restcontroller;
+
+import javax.ws.rs.Path;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ineuron.client.IStockClient;
+
+@RestController
+@RequestMapping("api/calc")
+public class StockCalcController {
+	
+	private IStockClient client;
+	
+	@GetMapping("/calculate/{companyName}/{quantity}")
+	public ResponseEntity<?> calculate(@PathVariable String companyName, @PathVariable Integer quantity){
+		ResponseEntity<?> resppnseEntity=null;
+		
+		System.out.println(companyName);
+		System.out.println(quantity);
+		
+		
+		
+		return null;
+	}
+
+}

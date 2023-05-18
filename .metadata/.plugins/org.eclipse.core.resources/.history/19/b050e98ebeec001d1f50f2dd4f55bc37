@@ -1,0 +1,7 @@
+package in.ineuron.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IStockPriceRepo extends JpaRepository<StockPrice, Integer>, JpaRepository<T, ID> {
+
+}
